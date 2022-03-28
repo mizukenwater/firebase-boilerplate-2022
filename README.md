@@ -1,31 +1,33 @@
-## これは何？
-Cloud FunctionsやFirebaseにまつわるその他諸々を管理するレポジトリです
+## What is this?
+Repository for managing Cloud Functions and other things related to Firebase.
 
-## 何ができる？
-基本はFirebase Cloud Functionsの開発ができます。
-それに付随してAuthentication, CloudStorage, Cloud Firestoreのエミュレーションができます。
+## What can I do?
+Basically, you can develop Firebase Cloud Functions.
+In addition, you can emulate Authentication, CloudStorage, and Cloud Firestore.
 
-## 環境構築
-ビルド & 起動
+## Build an environment
+Build & Launch
 ```shell
 docker compose build && docker compose up -d
 ```
 
-コンテナに入る
+Entering the container
 ```shell
 docker compose exec app sh
 ```
 
-FirebaseCLIにログイン
+Log in to FirebaseCLI
 ```shell
 firebase login --no-localhost
 ```
 
-.firebasercを編集
+Edit .firebaserc
 ```json
 {
   "projects": {
     "default": "YOUR_PROJECT_ID"
   }
 }
-```
+````
+
+Translated with www.DeepL.com/Translator (free version)
